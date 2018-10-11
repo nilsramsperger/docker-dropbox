@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 ADD ./files/supervisor.sh /
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends curl ca-certificates \
+    && apt-get install -y --no-install-recommends curl ca-certificates libglib2.0-0 \
     && mkdir -p /opt/dropbox \
     && curl -Lo dropbox-linux-x86_64.tar.gz https://www.dropbox.com/download?plat=lnx.x86_64 \
     && tar xzfv dropbox-linux-x86_64.tar.gz --strip 1 -C /opt/dropbox \
