@@ -49,3 +49,7 @@ If not, check the docker logs again and repeat the linking process.
 ## Backup and restore
 There should not be anything that needs to be backed up.
 Your data should be safe on Dropbox and the link can be reestablished anytime by repeating the setup procedure.
+
+## Known issues
+If you use this image on a Linux system, make sure to have your host's `/var` directory on an `ext4` drive.
+Other filesystems are not supported anymore. 
