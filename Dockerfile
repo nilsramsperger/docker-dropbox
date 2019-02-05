@@ -12,5 +12,5 @@ RUN apt-get update \
     && apt-get autoclean -y \
     && apt-get purge -y \
     && rm -rf /var/lib/apt/lists/*
-VOLUME /root/.dropbox
+VOLUME /root/.dropbox /root/Dropbox
 ENTRYPOINT ["/supervisor.sh"]
