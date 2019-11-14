@@ -1,6 +1,11 @@
 # docker-dropbox
 A docker image for syncing data with a Dropbox account.
 
+## This image is deprecated!
+Syncronisation stopped working due to Dropbox supporting ext4 filesystems only.
+I didn't manage to come around that issue.
+So the further development of this image is on hold.
+
 ## Description
 This image was created to utilize Dropbox as a backup space for a server. 
 The contents of the linked Dropbox account is synced to the `/root/Dropbox` directory.
